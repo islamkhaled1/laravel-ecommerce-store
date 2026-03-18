@@ -29,14 +29,45 @@ Simple internship-ready e-commerce project built with Laravel (PHP) and Blade.
 
 ## Screenshots
 
-You can add screenshots to show these key flows:
+### Login
 
-- Login page
-- Products listing
-- Cart page
-- Checkout page
-- Admin dashboard
-- Orders management
+![Login](docs/screenshots/login.png)
+
+### Register
+
+![Register](docs/screenshots/register.png)
+
+### Products (User)
+
+![Products User](docs/screenshots/products-user.png)
+
+### Product Details
+
+![Product Details](docs/screenshots/product-details.png)
+
+### Cart
+
+![Cart](docs/screenshots/cart.png)
+
+### Checkout
+
+![Checkout](docs/screenshots/checkout.png)
+
+### Order Success
+
+![Order Success](docs/screenshots/order-success.png)
+
+### Admin Dashboard
+
+![Admin Dashboard](docs/screenshots/admin-dashboard.png)
+
+### Orders Management (Admin)
+
+![Admin Orders](docs/screenshots/admin-orders.png)
+
+### Products Management (Admin)
+
+![Admin Products](docs/screenshots/admin-products.png)
 
 ## Local Setup
 
