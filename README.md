@@ -22,6 +22,22 @@ Simple internship-ready e-commerce project built with Laravel (PHP) and Blade.
 - SQLite (default local setup)
 - Vite (frontend assets)
 
+## Project Docs
+
+- Route map: [docs/ROUTES.md](docs/ROUTES.md)
+- Deployment guide: [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)
+
+## Screenshots
+
+You can add screenshots to show these key flows:
+
+- Login page
+- Products listing
+- Cart page
+- Checkout page
+- Admin dashboard
+- Orders management
+
 ## Local Setup
 
 1. Clone the repository:
