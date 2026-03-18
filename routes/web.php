@@ -5,8 +5,6 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\CartController;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', '/login');
@@ -16,15 +14,6 @@ Route::get('/dashboard', [DashboardController::class, 'index'])
     ->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/logout', function (Request $request) {
-        Auth::guard('web')->logout();
-
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
-
-        return redirect('/login');
-    });
-
     Route::resource('products', ProductController::class)->only(['index', 'show']);
     Route::resource('products', ProductController::class)->except(['index', 'show'])->middleware('admin');
     Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
