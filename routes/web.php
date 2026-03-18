@@ -14,8 +14,8 @@ Route::get('/dashboard', [DashboardController::class, 'index'])
     ->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::resource('products', ProductController::class)->only(['index', 'show']);
     Route::resource('products', ProductController::class)->except(['index', 'show'])->middleware('admin');
+    Route::resource('products', ProductController::class)->only(['index', 'show']);
     Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
     Route::post('/cart/{product}/add', [CartController::class, 'add'])->name('cart.add');
     Route::patch('/cart/{product}', [CartController::class, 'update'])->name('cart.update');
